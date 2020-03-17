@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.serif {
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.sans-serif {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    --gradient: rgba(0, 0, 0, .3);
+    padding: 3em 10em;
+    background-image:
+        linear-gradient(var(--gradient), var(--gradient)),
+        url('../assets/bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: 60% 30%;
+    background-size: cover;
+    color: white;
+}
+
+.header-title h1 {
+    font-size: 4em;
+    line-height: 1.15;
+    margin: 1.5em 0 0.5em 0;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.logo {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.nav-links li {
+    margin-left: 2.5em;
+}
+
+.panel {
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: rgb(219, 136, 27);
+    background-color: white;
+    padding: 2em 4em;
+    border-radius: 0 10px 10px 10px;
+}
+
+.panel-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+}
+
+.cat {
+    display: flex;
+    margin-top: 4em;
+}
+
+.tab {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 1em 1.5em;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.tab+.tab {
+    margin-left: -1px;
+}
+
+.tab.active {
+    color: rgb(219, 136, 27);
+    background-color: white;
+}
