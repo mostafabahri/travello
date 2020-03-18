@@ -25,19 +25,19 @@
 }
 
 .header-title h1 {
-    font-size: 4em;
+    font-size: 4rem;
     line-height: 1.15;
     margin: 1.5em 0 0.5em 0;
 }
 
 .subtitle {
-    font-size: 14px;
+    font-size: .875rem;
     color: rgba(255, 255, 255, 0.95);
     letter-spacing: 1px;
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 600;
     display: flex;
@@ -52,7 +52,7 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.95);
 }
@@ -86,7 +86,7 @@
     background-color: rgba(255, 255, 255, 0.25);
     padding: 1em 1.5em;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 10px 10px 0 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.10);
     cursor: pointer;
@@ -119,10 +119,6 @@
     border: none;
     border-radius: 45px;
     color: white;
-}
-
-.submit:focus {
-    outline: none;
 }
 
 .submit:hover {
