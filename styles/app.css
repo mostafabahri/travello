@@ -111,12 +111,6 @@
     margin-top: 10px;
 }
 
-input,
-select,
-button {
-    font-size: 14px;
-}
-
 .submit {
     margin-left: 1em;
     box-shadow: none;
