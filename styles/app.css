@@ -15,7 +15,7 @@
 .container {
     max-width: 74rem;
     margin: 0 auto;
-    padding: 2em 3em;
+    padding: 0 3em;
 }
 
 .header {
@@ -27,6 +27,7 @@
     background-position: 60% 30%;
     background-size: cover;
     color: white;
+    padding: 2em 0 3em;
 }
 
 .header-title h1 {
@@ -63,6 +64,11 @@
 
 .nav-links li {
     margin-left: 2.5em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .panel {
