@@ -71,7 +71,7 @@
     color: inherit;
 }
 
-.panel {
+.panel-form {
     display: inline-flex;
     flex-wrap: wrap;
     color: var(--primary-color);
@@ -80,15 +80,19 @@
     border-radius: 0 10px 10px 10px;
 }
 
-.panel-item {
+
+.form-col {
     display: flex;
     flex-direction: column;
     margin-right: 1.5em;
 }
 
-.cat {
-    display: flex;
+.cta {
     margin-top: 4em;
+}
+
+.tabs {
+    display: flex;
 }
 
 .tab {
@@ -120,7 +124,7 @@
     margin-top: 10px;
 }
 
-.submit {
+.btn {
     margin-left: 1em;
     box-shadow: none;
     padding: 0.8em 2.5em;
@@ -130,7 +134,7 @@
     color: white;
 }
 
-.submit:hover {
+.btn:hover {
     background-color: var(--primary-color-light);
     cursor: pointer;
 }

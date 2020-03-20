@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="header sans-serif">
+    <header class="header sans-serif">
         <div class="container">
             <nav>
                 <div class="logo serif">
@@ -29,46 +29,51 @@
                 </ul>
             </nav>
 
-            <div class="header-title">
+            <section class="header-title">
                 <h1 class="serif">Let's Make <br> Your Best <br>Trip Ever </h1>
                 <p class="subtitle">The best travel for your journey <br>
                     respectful of the environment</p>
-            </div>
-            <div class="cat">
-                <div class="tab active">One way</div>
-                <div class="tab">Round Trip</div>
-                <div class="tab">Multi - City</div>
-            </div>
-            <form action="#" method="get">
-                <div class="panel">
-                    <div class="panel-item">
-                        <div>From</div>
-                        <select class="input" name="from">
-                            <option value="Indonesia">Indonesia</option>
-                            <option value="Italy">Italy</option>
-                            <option value="Spain">Spain</option>
-                        </select>
-                    </div>
-                    <div class="panel-item">
-                        <div>To</div>
-                        <select class="input" name="to">
-                            <option value="South Korea">South Korea</option>
-                            <option value="Indonesia">Indonesia</option>
-                            <option value="Italy">Italy</option>
-                            <option value="Spain">Spain</option>
-                        </select>
-                    </div>
-                    <div class="panel-item">
-                        <div>Expected Date</div>
-                        <input type="date" name="date" class="input sans-serif">
-                    </div>
-                    <div class="panel-item" style="justify-content: flex-end;">
-                        <input type="submit" value="SEARCH" class="submit">
-                    </div>
+            </section>
+            <section class="cta">
+                <div class="tabs">
+                    <div class="tab active">One way</div>
+                    <div class="tab">Round Trip</div>
+                    <div class="tab">Multi - City</div>
                 </div>
-            </form>
+                <div class="tabs-content">
+                    <div id="tab-oneway" class="panel">
+                        <form action="#" method="get" class="panel-form">
+                            <div class="form-col">
+                                <div>From</div>
+                                <select class="input" name="from">
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="Italy">Italy</option>
+                                    <option value="Spain">Spain</option>
+                                </select>
+                            </div>
+                            <div class="form-col">
+                                <div>To</div>
+                                <select class="input" name="to">
+                                    <option value="South Korea">South Korea</option>
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="Italy">Italy</option>
+                                    <option value="Spain">Spain</option>
+                                </select>
+                            </div>
+                            <div class="form-col">
+                                <div>Expected Date</div>
+                                <input type="date" name="date" class="input sans-serif">
+                            </div>
+                            <div class="form-col" style="justify-content: flex-end;">
+                                <input type="submit" value="SEARCH" class="btn">
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </section>
+
         </div>
-    </div>
+    </header>
 
 </body>
 
