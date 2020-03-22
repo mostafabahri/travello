@@ -7,18 +7,18 @@
     <title>Travello</title>
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|ZCOOL+XiaoWei|Merriweather:400,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/app.css">
 
 </head>
 
 <body>
-    <header class="header sans-serif">
+    <header class="site-header sans-serif">
         <div class="container">
             <nav>
-                <div class="logo serif">
+                <div class="logo serif-fancy">
                     <i class="las la-mountain la-lg"></i> Travello</div>
 
                 <ul class="nav-links">
@@ -29,12 +29,12 @@
                 </ul>
             </nav>
 
-            <section class="header-title">
-                <h1 class="serif">Let's Make <br> Your Best <br>Trip Ever </h1>
+            <section class="site-header-title">
+                <h1 class="serif-fancy">Let's Make <br> Your Best <br>Trip Ever </h1>
                 <p class="subtitle">The best travel for your journey <br>
                     respectful of the environment</p>
             </section>
-            <section class="cta">
+            <article class="cta">
                 <div class="tabs">
                     <div class="tab active">One way</div>
                     <div class="tab">Round Trip</div>
@@ -62,7 +62,7 @@
                             </div>
                             <div class="form-col">
                                 <div>Expected Date</div>
-                                <input type="date" name="date" class="input sans-serif">
+                                <input type="date" name="date" class="input">
                             </div>
                             <div class="form-col" style="justify-content: flex-end;">
                                 <input type="submit" value="SEARCH" class="btn">
@@ -70,11 +70,38 @@
                     </div>
                     </form>
                 </div>
-            </section>
+            </article>
 
         </div>
     </header>
-
+    <main class="main-wrap">
+        <section class="section section--popular sans-serif">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="serif">Popular Destinations</h2>
+                    <p>
+                        From historical cities to natural splendours, come see the best
+                        of the world!
+                        <span class="slide-buttons-wrap">
+                            <i class="las la-angle-left slide-btn"></i>
+                            <i class="las la-angle-right slide-btn slide-btn--dark"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="articles">
+                    <article class="card" id="card-1">
+                        <h4>
+                            Millenium Bridge
+                        </h4>
+                        <div class="location">
+                            <i class="las la-map-marker la-lg"></i>
+                            London, United Kingdom
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
