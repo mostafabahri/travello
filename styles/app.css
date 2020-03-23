@@ -265,10 +265,6 @@
 }
 
 
-.section--popular {
-    overflow-x: hidden;
-}
-
 #card-1 {
     background-image:
         var(--bg-overlay),
@@ -309,7 +305,7 @@
     margin-right: auto;
 }
 
-.section--offers .section__header h2:after {
+.section__header--center h2:after {
     width: 5rem;
 }
 
@@ -361,3 +357,14 @@
     max-width: 80rem;
     margin: 0 auto;
 }
+
+.section--popular,
+.section--offers {
+    overflow-x: hidden;
+}
+
+/*
+ ===========
+ Blog Section
+ ===========
+*/
