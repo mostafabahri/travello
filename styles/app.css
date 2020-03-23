@@ -227,6 +227,12 @@
 
 
 .card {
+    cursor: pointer;
+    transition: all 350ms ease-out;
+    border-radius: 10px;
+}
+
+.card--popular {
     color: white;
     display: flex;
     flex-direction: column;
@@ -234,12 +240,8 @@
     height: 26rem;
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
     padding: 1.3em;
     background-position: center;
-    cursor: pointer;
-    transition: all 350ms ease-out;
-
     --bg-overlay: linear-gradient(transparent, rgba(0, 0, 0, .2));
 }
 
