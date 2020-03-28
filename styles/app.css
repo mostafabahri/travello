@@ -4,6 +4,7 @@
     --primary-color-light: rgb(240, 148, 28);
     --primary-color-dark: #895428;
     --accent-color: white;
+
 }
 
 .serif-fancy {
@@ -251,6 +252,8 @@
     gap: 25px;
     margin: 2em 0;
 
+    --translate: 5px;
+    --transform: translateY(calc(-1 * var(--translate)));
 }
 
 .grid--popular {
@@ -264,7 +267,7 @@
 
 .grid:hover>.card:hover {
     opacity: 1;
-    transform: translateY(-8px);
+    transform: var(--transform);
 }
 
 
@@ -385,11 +388,18 @@
 .card--blog.card--featured {
     grid-row: 1/ -1;
     grid-template-rows: 1fr;
+
+    /* override transform to translate on X */
+    --transform: translateX(calc(-1 * var(--translate)));
+
 }
 
 .card--blog.card--side {
     grid-template: repeat(3, auto) / 1fr 2.3fr;
     gap: 0 20px;
+
+    /* override transform to translate on X */
+    --transform: translateX(var(--translate));
 }
 
 .card--side>.card__img {
