@@ -378,12 +378,12 @@ a {
 
 /* grid layout */
 .grid--blog {
-    grid-template: repeat(3, minmax(190px, 1fr)) / repeat(2, minmax(200px, 1fr));
+    grid-template: repeat(3, minmax(200px, 1fr)) / repeat(2, minmax(200px, 1fr));
 }
 
 .card--blog {
     display: grid;
-    gap: 15px;
+    row-gap: 15px;
 }
 
 .card--blog.card--featured {
@@ -395,8 +395,8 @@ a {
 }
 
 .card--blog.card--side {
-    grid-template: repeat(3, auto) / 1fr 2.3fr;
-    gap: 0 20px;
+    grid-template-columns: 1fr 2.3fr;
+    column-gap: 20px;
     align-items: center;
 
     --transform: 0;
@@ -424,6 +424,7 @@ a {
     font-size: 0.9rem;
     color: rgba(26, 33, 36, 0.75);
     line-height: 1.5;
+    margin: 0.8rem 0 1.2rem;
 }
 
 .card__link {
