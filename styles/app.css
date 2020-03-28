@@ -247,11 +247,14 @@
 
 .grid {
     display: grid;
-    --repeat: 10;
-    --size: 290px;
-    grid-template-columns: repeat(var(--repeat), var(--size));
+    grid-auto-flow: column;
     gap: 25px;
     margin: 2em 0;
+
+}
+
+.grid--popular {
+    grid-auto-columns: 290px;
 }
 
 /* hover animation related */
@@ -310,7 +313,7 @@
 }
 
 .grid--offers {
-    grid-template-columns: repeat(3, 345px);
+    grid-auto-columns: minmax(345px, 1fr);
 }
 
 
@@ -368,3 +371,35 @@
  Blog Section
  ===========
 */
+
+
+.grid--blog {
+    grid-template: repeat(3, minmax(190px, 1fr)) / repeat(2, minmax(200px, 1fr));
+}
+
+.card--blog {
+    display: grid;
+    gap: 15px;
+}
+
+.card__img {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: inherit;
+}
+
+.card--featured {
+    grid-row: 1/ -1;
+    grid-template: 1fr repeat(3, auto) / auto;
+}
+
+.card--side {
+    grid-template: repeat(3, auto) / 1fr 2.3fr;
+    gap: 0 20px;
+}
+
+.card--side>.card__img {
+    grid-row: 1 /-1;
+}
