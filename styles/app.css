@@ -431,3 +431,43 @@ a {
     color: var(--primary-color);
     font-style: italic;
 }
+
+/*
+ ===========
+ Destination Gallery Section
+ ===========
+*/
+.section--gallery {
+    margin-top: 6em;
+    overflow-x: hidden;
+}
+
+.section--gallery .section__header h2:after {
+    width: 8rem;
+}
+
+.grid--gallery {
+    grid-auto-columns: minmax(250px, 1fr);
+    grid-template-rows: 380px;
+    gap: 0;
+    --transform: 0;
+}
+
+.card--gallery {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 0;
+    --border: 15px;
+}
+
+.card--gallery:first-child {
+    border-top-left-radius: var(--border);
+    border-bottom-left-radius: var(--border);
+}
+
+.card--gallery:last-child {
+    border-top-right-radius: var(--border);
+    border-bottom-right-radius: var(--border);
+}
