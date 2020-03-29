@@ -3,6 +3,7 @@
     --primary-color: #cd6814;
     --primary-color-light: rgb(240, 148, 28);
     --primary-color-dark: #895428;
+    --primary-color-darker: #381e09;
     --accent-color: white;
 
 }
@@ -470,4 +471,82 @@ a {
 .card--gallery:last-child {
     border-top-right-radius: var(--border);
     border-bottom-right-radius: var(--border);
+}
+
+/*
+ ===========
+ Footer
+ ===========
+*/
+.footer {
+    background-color: var(--primary-color-darker);
+    height: 400px;
+    margin-top: 10rem;
+}
+
+.newsletter {
+    padding: 3em 5em;
+    box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.newsletter__title {
+    --color: var(--primary-color-dark);
+    color: var(--color);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.label--block {
+    display: block;
+}
+
+.input--bg {
+    border: none;
+    background-color: #fceee0;
+    border-radius: 45px;
+    color: black;
+    padding: 0.7rem 2rem;
+}
+
+.newsletter-form {
+    margin-left: 4em;
+}
+
+.newsletter-form .label {
+    color: var(--primary-color-dark);
+    margin-bottom: 0.4em;
+}
+
+.newsletter-form .input {
+    width: 19rem;
+}
+
+.newsletter-form .btn {
+    margin-left: 1em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__col {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer__header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+.footer__col.payment li {
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
