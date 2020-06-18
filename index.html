@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/app.css">
 
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
 </head>
 
 <body>
@@ -35,10 +36,11 @@
                     respectful of the environment</p>
             </section>
             <article class="cta">
-                <div class="tabs">
-                    <div class="tab active">One way</div>
-                    <div class="tab">Round Trip</div>
-                    <div class="tab">Multi - City</div>
+                <div class="tabs" x-data="{tab: 'one-way'}">
+                    <div class="tab" :class="{'active' : tab === 'one-way'}" @click="tab = 'one-way'">One way</div>
+                    <div class="tab" :class="{'active' : tab === 'round-trip'}" @click="tab = 'round-trip'">Round Trip
+                    </div>
+                    <div class="tab" :class="{'active' : tab === 'multi'}" @click="tab = 'multi'">Multi - City</div>
                 </div>
                 <div class="tabs-content">
                     <div id="tab-oneway" class="panel">
