@@ -78,20 +78,20 @@
     </header>
     <main class="main-wrap sans-serif">
         <section class="section section--popular">
-            <div class="container">
+            <div class="container" x-data="popularSlide()">
                 <div class="section__header">
                     <h2 class="serif">Popular Destinations</h2>
                     <p>
                         From historical cities to natural splendours, come see the best
                         of the world!
                         <span class="slide-buttons-wrap">
-                            <i class="las la-angle-left slide-btn"></i>
-                            <i class="las la-angle-right slide-btn slide-btn--dark"></i>
+                            <i class="las la-angle-left slide-btn" @click="left()"></i>
+                            <i class="las la-angle-right slide-btn slide-btn--dark" @click="right()"></i>
                         </span>
                     </p>
                 </div>
                 <div class="grid grid--popular">
-                    <article class="card card--popular" id="card-1">
+                    <article class="card card--popular" id="card-1" :style="style()">
                         <h4>
                             Millenium Bridge
                         </h4>
@@ -101,7 +101,7 @@
                         </div>
                     </article>
 
-                    <article class="card card--popular" id="card-2">
+                    <article class="card card--popular" id="card-2" :style="style()">
                         <h4>
                             Sahara Desert
                         </h4>
@@ -110,7 +110,7 @@
                             Merzouga, Morocco
                         </div>
                     </article>
-                    <article class="card card--popular" id="card-3">
+                    <article class="card card--popular" id="card-3" :style="style()">
                         <h4>
                             Gyenoubobkoug Palace
                         </h4>
@@ -119,7 +119,7 @@
                             Seoul, South Korea
                         </div>
                     </article>
-                    <article class="card card--popular" id="card-4">
+                    <article class="card card--popular" id="card-4" :style="style()">
                         <h4>
                             Kuta Beach
                         </h4>
@@ -128,7 +128,7 @@
                             Bali, Indonesia
                         </div>
                     </article>
-                    <article class="card card--popular" id="card-1">
+                    <article class="card card--popular" id="card-1" :style="style()">
                         <h4>
                             Millenium Bridge
                         </h4>
@@ -351,6 +351,23 @@
             </div>
         </footer>
     </main>
+    <script>
+        function popularSlide() {
+            return {
+                slide: 0,
+                // for demo purpose stop after a number of moves 
+                left() {
+                    this.slide + 1 < 8 ? this.slide++ : this.slide;
+                },
+                right() {
+                    this.slide - 1 > -5 ? this.slide-- : this.slide;
+                },
+                style() {
+                    return `transform: translateX(${-150 * this.slide}px`;
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
